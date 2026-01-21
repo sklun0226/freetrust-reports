@@ -1,0 +1,80 @@
+[E 2026-01-21 18:15:07,780 minium.Conn7840 connection#668 __on_message] [b604a317-7d2f-4e01-8313-eb52ea3bde56]: no such element
+[E 2026-01-21 18:15:08,785 minium.Conn7840 connection#668 __on_message] [98497b83-e3ad-4259-a82d-f6e3b0ffd679]: no such element
+[E 2026-01-21 18:15:09,790 minium.Conn7840 connection#668 __on_message] [2719a9cf-6af9-448f-b6f4-e5556904c01f]: no such element
+[E 2026-01-21 18:15:10,796 minium.Conn7840 connection#668 __on_message] [f3f5fcca-29b9-408f-a949-c61538e496d0]: no such element
+[E 2026-01-21 18:15:11,802 minium.Conn7840 connection#668 __on_message] [e97c0181-2775-419c-83cc-91392fa2b876]: no such element
+[E 2026-01-21 18:15:12,808 minium.Conn7840 connection#668 __on_message] [b668541b-0a7f-44fc-b9a7-5b53fa01aea4]: no such element
+[E 2026-01-21 18:15:13,817 minium.Conn7840 connection#668 __on_message] [f5624953-8b45-40cd-8c93-53fd8ccca9d8]: no such element
+[E 2026-01-21 18:15:14,823 minium.Conn7840 connection#668 __on_message] [5f1ef58a-0b38-4afd-ae30-99fb5896f078]: no such element
+[E 2026-01-21 18:15:15,830 minium.Conn7840 connection#668 __on_message] [c8563172-201c-4058-b78b-1388d16cafef]: no such element
+[E 2026-01-21 18:15:16,835 minium.Conn7840 connection#668 __on_message] [c425fa22-168d-4f49-a6c2-5936685d2763]: no such element
+[E 2026-01-21 18:15:16,870 minium test_home_page#102 test_myhome_friendship_status_change] 个人说明书状态 休闲 切换失败：element[/view[2]/view[5]/view[2]/view[1]] not found
+[E 2026-01-21 18:15:17,015 minium test_home_page#909 test_myhome_friendship_create_others_manual] 文字转名片创建个人说明书失败：element[/view[2]/view[5]/view[2]/view[1]] not found
+[E 2026-01-21 18:15:17,152 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_home_page.py", line 355, in test_myhome_friendship_create_others_manual
+    self.test_myhome_friendship_status_change()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_home_page.py", line 91, in test_myhome_friendship_status_change
+    current_status = self.page.get_element(myhome_select_friendship_status_element,
+                                           max_timeout=max_timeout)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 363, in get_element
+    return self.get_element_by_xpath(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        _selector,
+        ^^^^^^^^^^
+        max_timeout=max_timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        auto_fix=auto_fix
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 613, in get_element_by_xpath
+    raise MiniElementNotFoundError(_selector)
+minium.framework.exception.MiniElementNotFoundError: element[/view[2]/view[5]/view[2]/view[1]] not found
+[E 2026-01-21 18:15:17,332 minium utils#166 wrapper] catch error: 'gbk' codec can't decode byte 0x83 in position 1201: illegal multibyte sequence
+[E 2026-01-21 18:15:17,337 minium assertbase#390 _get_stack_info] <bound method MyHomeTest.test_myhome_friendship_create_others_manual of <test.test_home_page.MyHomeTest testMethod=test_myhome_friendship_create_others_manual>>
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_home_page.py", line 355, in test_myhome_friendship_create_others_manual
+    self.test_myhome_friendship_status_change()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_home_page.py", line 91, in test_myhome_friendship_status_change
+    current_status = self.page.get_element(myhome_select_friendship_status_element,
+                                           max_timeout=max_timeout)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 363, in get_element
+    return self.get_element_by_xpath(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        _selector,
+        ^^^^^^^^^^
+        max_timeout=max_timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        auto_fix=auto_fix
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 613, in get_element_by_xpath
+    raise MiniElementNotFoundError(_selector)
+minium.framework.exception.MiniElementNotFoundError: element[/view[2]/view[5]/view[2]/view[1]] not found

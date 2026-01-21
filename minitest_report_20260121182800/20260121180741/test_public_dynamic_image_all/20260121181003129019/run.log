@@ -1,0 +1,74 @@
+[E 2026-01-21 18:10:42,155 minium test_find_page#214 test_public_dynamic_image_all] 发布动态失败：'NoneType' object has no attribute 'to_selector'
+[E 2026-01-21 18:10:42,270 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_find_page.py", line 173, in test_public_dynamic_image_all
+    link_btn = self.page.get_element(selector=dynamic_link_tag, inner_text=dynamic_link_inner_text,
+                                     max_timeout=max_timeout)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 369, in get_element
+    r = self.get_elements(
+        _selector,
+        max_timeout,
+        auto_fix=auto_fix
+    )
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 484, in get_elements
+    els = filter_elements(1, True)  # max_timeout只进行一次
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 465, in filter_elements
+    elements = self._get_elements_by_css(new_selector, max_timeout, auto_fix=auto_fix)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 727, in _get_elements_by_css
+    is_similar, root, sel, els = search(wxml, _selector)
+                                 ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\findwxml.py", line 774, in search
+    _els, _find_sel, _auto_fixed = search_css(tree, new_sel.to_selector_list())
+                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\findwxml.py", line 487, in search_css
+    _res = get_child_els(tree, new_sel.to_selector())
+                               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_selector'
+[E 2026-01-21 18:10:42,424 minium assertbase#390 _get_stack_info] <bound method DynamicTest.test_public_dynamic_image_all of <test.test_find_page.DynamicTest testMethod=test_public_dynamic_image_all>>
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_find_page.py", line 173, in test_public_dynamic_image_all
+    link_btn = self.page.get_element(selector=dynamic_link_tag, inner_text=dynamic_link_inner_text,
+                                     max_timeout=max_timeout)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 369, in get_element
+    r = self.get_elements(
+        _selector,
+        max_timeout,
+        auto_fix=auto_fix
+    )
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 484, in get_elements
+    els = filter_elements(1, True)  # max_timeout只进行一次
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 465, in filter_elements
+    elements = self._get_elements_by_css(new_selector, max_timeout, auto_fix=auto_fix)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 727, in _get_elements_by_css
+    is_similar, root, sel, els = search(wxml, _selector)
+                                 ~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\findwxml.py", line 774, in search
+    _els, _find_sel, _auto_fixed = search_css(tree, new_sel.to_selector_list())
+                                   ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\findwxml.py", line 487, in search_css
+    _res = get_child_els(tree, new_sel.to_selector())
+                               ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'to_selector'

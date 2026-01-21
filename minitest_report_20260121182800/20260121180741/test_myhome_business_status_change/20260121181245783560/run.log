@@ -1,0 +1,83 @@
+[E 2026-01-21 18:14:23,359 minium.Conn7840 connection#668 __on_message] [16de184b-2590-4eac-a01e-08c876f8f7f9]: no such element
+[E 2026-01-21 18:14:24,367 minium.Conn7840 connection#668 __on_message] [2fc6fc00-4f1a-47d4-bf8f-770e03353e86]: no such element
+[E 2026-01-21 18:14:25,376 minium.Conn7840 connection#668 __on_message] [e5e58b9f-2859-4dc1-867f-c5babd79e7c0]: no such element
+[E 2026-01-21 18:14:26,383 minium.Conn7840 connection#668 __on_message] [d3d39590-cd66-4ac0-b2ec-3cd8a91b9f8a]: no such element
+[E 2026-01-21 18:14:27,389 minium.Conn7840 connection#668 __on_message] [e13c0c3f-8c80-4b78-a6ab-a1644d719965]: no such element
+[E 2026-01-21 18:14:28,394 minium.Conn7840 connection#668 __on_message] [e8053621-b8e3-497e-b466-f0d21faef222]: no such element
+[E 2026-01-21 18:14:29,404 minium.Conn7840 connection#668 __on_message] [af8d51d8-8e19-4760-a4ae-e3c11ea73007]: no such element
+[E 2026-01-21 18:14:30,412 minium.Conn7840 connection#668 __on_message] [e4d68a6d-41d9-47a9-8cd7-fc74b0b153a0]: no such element
+[E 2026-01-21 18:14:31,420 minium.Conn7840 connection#668 __on_message] [8f6b2284-bbe9-4f43-badc-b8baa6ed2d11]: no such element
+[E 2026-01-21 18:14:32,425 minium.Conn7840 connection#668 __on_message] [e8221387-4b56-4a34-b9f5-816d2d5cf1a4]: no such element
+[E 2026-01-21 18:14:32,720 minium.Conn7840 connection#668 __on_message] [4c30e808-3318-4e95-86c1-b738bc2f720e]: no such element
+[E 2026-01-21 18:14:33,726 minium.Conn7840 connection#668 __on_message] [8f03cb35-c141-4b3f-8acd-b9a39ade569d]: no such element
+[E 2026-01-21 18:14:34,734 minium.Conn7840 connection#668 __on_message] [4fbcf337-8485-4124-8a48-0e03598a7e1a]: no such element
+[E 2026-01-21 18:14:35,742 minium.Conn7840 connection#668 __on_message] [4c8a14e5-6d3c-4f7c-907f-e8c02e095836]: no such element
+[E 2026-01-21 18:14:36,748 minium.Conn7840 connection#668 __on_message] [c34344b7-6f72-4490-8ffb-50fd2c2b2c43]: no such element
+[E 2026-01-21 18:14:37,755 minium.Conn7840 connection#668 __on_message] [87c5221d-c44a-42c0-92e9-65233a92aed1]: no such element
+[E 2026-01-21 18:14:38,760 minium.Conn7840 connection#668 __on_message] [cdc5b87a-b121-4e5f-babb-de208ce6d425]: no such element
+[E 2026-01-21 18:14:39,767 minium.Conn7840 connection#668 __on_message] [76c8326e-bd1a-4ecd-9e1b-a5b1585e5500]: no such element
+[E 2026-01-21 18:14:40,773 minium.Conn7840 connection#668 __on_message] [0f1d7e35-5295-4794-ac6e-6d65d84beeb1]: no such element
+[E 2026-01-21 18:14:41,779 minium.Conn7840 connection#668 __on_message] [bf7dec1b-bdf0-464f-9984-5663dd0c188f]: no such element
+[E 2026-01-21 18:14:41,837 minium test_home_page#155 test_myhome_business_status_change] 个人说明书切换商务状态失败：element[/view[2]/view[5]/view[2]/view[2]] not found
+[E 2026-01-21 18:14:43,842 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_home_page.py", line 144, in test_myhome_business_status_change
+    current_status = self.page.get_element(myhome_select_business_status_element,
+                                           max_timeout=max_timeout)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 363, in get_element
+    return self.get_element_by_xpath(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        _selector,
+        ^^^^^^^^^^
+        max_timeout=max_timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        auto_fix=auto_fix
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 613, in get_element_by_xpath
+    raise MiniElementNotFoundError(_selector)
+minium.framework.exception.MiniElementNotFoundError: element[/view[2]/view[5]/view[2]/view[2]] not found
+[E 2026-01-21 18:14:45,910 minium utils#166 wrapper] catch error: 'gbk' codec can't decode byte 0x83 in position 1201: illegal multibyte sequence
+[E 2026-01-21 18:14:45,912 minium assertbase#390 _get_stack_info] <bound method MyHomeTest.test_myhome_business_status_change of <test.test_home_page.MyHomeTest testMethod=test_myhome_business_status_change>>
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\test_home_page.py", line 144, in test_myhome_business_status_change
+    current_status = self.page.get_element(myhome_select_business_status_element,
+                                           max_timeout=max_timeout)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\app.py", line 291, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 363, in get_element
+    return self.get_element_by_xpath(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        _selector,
+        ^^^^^^^^^^
+        max_timeout=max_timeout,
+        ^^^^^^^^^^^^^^^^^^^^^^^^
+        auto_fix=auto_fix
+        ^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\page\page.py", line 613, in get_element_by_xpath
+    raise MiniElementNotFoundError(_selector)
+minium.framework.exception.MiniElementNotFoundError: element[/view[2]/view[5]/view[2]/view[2]] not found
