@@ -1,0 +1,95 @@
+[E 2026-01-22 21:19:00,456 minium assertbase#308 _get_error_info] self._outcome is None, maybe a class error
+[E 2026-01-22 21:19:00,465 minium assertbase#390 _get_stack_info] <bound method MiniTest._miniClassSetUp of <class 'test.test_my_page.MyTest'>>
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 38, in __getattr__
+    return self[name]
+           ~~~~^^^^^^
+KeyError: 'SDKVersion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 842, in connect_dev_tool
+    self._get_dev_tool_info()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 235, in _get_dev_tool_info
+    self.sdk_version = Version(result.SDKVersion)
+                               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 40, in __getattr__
+    raise MiniNotAttributeError(name)
+minium.framework.exception.MiniNotAttributeError: SDKVersion
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 796, in launch_dev_tool
+    self.connect_dev_tool(is_port_in_use)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 854, in connect_dev_tool
+    raise MiniConnectError(
+        "three times try to connect Dev tool has all fail ..."
+    )
+minium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 38, in __getattr__
+    return self[name]
+           ~~~~^^^^^^
+KeyError: 'SDKVersion'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 842, in connect_dev_tool
+    self._get_dev_tool_info()
+    ~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 235, in _get_dev_tool_info
+    self.sdk_version = Version(result.SDKVersion)
+                               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\connection.py", line 40, in __getattr__
+    raise MiniNotAttributeError(name)
+minium.framework.exception.MiniNotAttributeError: SDKVersion
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\suite.py", line 64, in _handleClassSetUp
+    _miniClassSetUp()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 334, in _miniClassSetUp
+    native, mini, miniprogram = init_miniprogram(cls.CONFIG)
+                                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 204, in init_miniprogram
+    mini = get_minium(cfg)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 164, in get_minium
+    g_minium = minium.miniprogram.get_minium_driver(conf=cfg, native=g_native)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\__init__.py", line 28, in get_minium_driver
+    return APP[application](conf, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 160, in __init__
+    self.launch_weapp()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 638, in launch_weapp
+    self.launch_dev_tool()
+    ~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 826, in launch_dev_tool
+    self.connect_dev_tool(False)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\base_driver\minium_log.py", line 148, in wrapper
+    result = func(*args, **kwargs)
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\miniprogram\wx_minium.py", line 854, in connect_dev_tool
+    raise MiniConnectError(
+        "three times try to connect Dev tool has all fail ..."
+    )
+minium.framework.exception.MiniConnectError: three times try to connect Dev tool has all fail ...
+[W 2026-01-22 21:19:00,486 minium assertbase#354 _log_info_when_error] config: {'debug': True, 'base_dir': 'D:\\FreeTrust\\FreeU_WX_Minium', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {'serial': 'UQG0220509034218', 'uiautomator_version': 2}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 300, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': 'outputs', 'enable_app_log': True, 'enable_network_panel': True, 'project_path': 'D:/FreeTrust/Project/fu-taro-card', 'dev_tool_path': 'C:/Program Files (x86)/Tencent/微信web开发者工具/cli.bat', 'test_port': 9420, 'mock_native_modal': None, 'mock_request': [], 'auto_authorize': True, 'audits': True, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': True, 'mini_program_app_id': 'wxf270e6bcbda7bf7d', 'connect_timeout': 30, 'use_multi_process': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20260122211818', 'case_output': 'outputs\\20260122211818\\test_my_mood_card\\20260122211900447415'}
+[W 2026-01-22 21:19:00,487 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[E 2026-01-22 21:19:00,487 minium utils#166 wrapper] catch error: 'MyTest' object has no attribute 'autofix_info'
