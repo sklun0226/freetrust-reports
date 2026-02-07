@@ -1,0 +1,82 @@
+[I 2026-02-07 13:51:45,288 minium minitest#432 _miniSetUp] =========Current case: test_demo_two=========
+[I 2026-02-07 13:51:45,290 minium minitest#435 _miniSetUp] package info: D:.FreeTrust.FreeU_WX_Minium.test.demo, case info: DemoTest.test_demo_two
+[I 2026-02-07 13:51:45,291 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-02-07 13:51:45,292 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-02-07 13:51:45,293 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-02-07 13:51:45,294 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-02-07 13:51:45,294 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2026-02-07 13:51:45,298 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"024e6ed9-dd19-483d-947b-9444db04e92d","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2026-02-07 13:51:45,302 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"024e6ed9-dd19-483d-947b-9444db04e92d","result":{"result":{"path":"pages/index/index","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[I 2026-02-07 13:51:45,304 minium.App2256 app#950 relaunch] ReLaunch: /pages/index/index
+[D 2026-02-07 13:51:45,305 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"694eb194-62b7-4c48-892b-948de1a0196b","method":"App.getCurrentPage","params":{}}
+[D 2026-02-07 13:51:45,310 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"694eb194-62b7-4c48-892b-948de1a0196b","result":{"pageId":1,"path":"pages/index/index","query":{}}}
+[D 2026-02-07 13:51:45,311 minium.App2256 app#618 _evaluate_js] evaluate js file getCurrentPages [ALL]
+[D 2026-02-07 13:51:45,313 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"b0155ea5-584a-4a6e-8826-a93774c67efe","method":"App.callFunction","params":{"functionDeclaration":"function miniumGetCurrentPages(e){var r=getCurrentPages();return e&&(r=[r.pop()]),r=r.map((function(e){if(e){let{route:r}=e;const n=r.indexOf(\"__plugin__/\");return n>-1&&(r=\"plugin-private://\"+r.slice(n+11)),{pageId:e.__wxWebviewId__,path:r,query:e.options,renderer:e.renderer}}})),e?r.pop():r}","args":[true]}}
+[D 2026-02-07 13:51:45,316 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"b0155ea5-584a-4a6e-8826-a93774c67efe","result":{"result":{"pageId":1,"path":"pages/index/index","query":{},"renderer":"webview"}}}
+[D 2026-02-07 13:51:45,317 minium.Conn7888 connection#427 _safely_send] ASYNC_SEND > [1795108147888]{"id":"d5368279-5ffd-46b8-8728-edf16f28ee9e","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/index/index"}]}}
+[D 2026-02-07 13:51:45,320 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/index/index"}]}}
+[D 2026-02-07 13:51:45,324 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"d5368279-5ffd-46b8-8728-edf16f28ee9e","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2026-02-07 13:51:45,325 minium.Conn7888 connection#704 _handle_async_msg] received async msg: d5368279-5ffd-46b8-8728-edf16f28ee9e
+[I 2026-02-07 13:51:46,235 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-07 13:51:46,237 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-07 13:51:46,238 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"4eeb8cd2-ad06-452d-936d-c93be5a2c8bc","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-07 13:51:46,239 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"4eeb8cd2-ad06-452d-936d-c93be5a2c8bc","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-07 13:51:46,240 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-07 13:51:46,241 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-07 13:51:46,241 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-07 13:51:46,242 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-07 13:51:46,923 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/home/index","query":{},"openType":"switchTab","timeStamp":1770443506916,"webviewId":2,"routeEventId":"2_1770443506353","renderer":"webview"},1770443506919]}}
+[I 2026-02-07 13:51:46,925 minium.App2256 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/home/index', 'query': {}, 'openType': 'switchTab', 'timeStamp': 1770443506916, 'webviewId': 2, 'routeEventId': '2_1770443506353', 'renderer': 'webview'}, 1770443506919]}
+[W 2026-02-07 13:51:46,926 minium.App2256 app#953 relaunch] ReLaunch(/pages/index/index) but(/pages/home/index)
+[I 2026-02-07 13:51:46,928 minium minitest#897 capture] capture setup.png
+[D 2026-02-07 13:51:46,929 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"7e3cee36-617e-40c6-8acd-454ed8ed3ea0","method":"App.captureScreenshot","params":{}}
+[I 2026-02-07 13:51:47,243 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-07 13:51:47,245 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-07 13:51:47,248 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"b020b6e9-90b0-4cbf-8404-3e47510eddcd","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-07 13:51:47,254 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"b020b6e9-90b0-4cbf-8404-3e47510eddcd","result":{"error":{"message":"authorizeAllow failed"}}}
+[D 2026-02-07 13:51:47,256 minium.Conn7888 connection#492 _receive_response] rewait for 7e3cee36-617e-40c6-8acd-454ed8ed3ea0
+[W 2026-02-07 13:51:47,256 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-07 13:51:47,258 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-07 13:51:47,259 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-07 13:51:47,260 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-07 13:51:47,292 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"7e3cee36-617e-40c6-8acd-454ed8ed3ea0","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAACCJJREFUeJzt1DEBwDAMwLCs/Dlnjzm0h4TAl7/dHYCZczsAeIUdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsAIgdALEDIHYAxA6A2AEQOwBiB0DsA
+[I 2026-02-07 13:51:47,301 minium minitest#487 _miniSetUp] =========case: test_demo_two start=========
+[I 2026-02-07 13:51:47,302 minium minitest#788 _callTestMethod] call test method
+[E 2026-02-07 13:51:47,303 minium minitest#793 _callTestMethod] test exception
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\demo.py", line 49, in test_demo_two
+    assert start == end,f"失败"
+AssertionError: 失败
+assert '我是一名热爱生活的人🌿，始终相信温暖的音乐能温柔治愈疲惫的心灵🎵，让日常的小美好成为生活的调味剂。我享受在悠闲的工作节奏中沉淀自我📚，通过细致观察与耐心倾听，发现工作中的每一处治愈角落✨，将压力转化为成长的养分🌱。在忙碌与宁静的平衡中，我学会用热爱点亮平凡日常，用真诚对待每一份小确幸，让疲惫在时光里悄悄消融，让生活始终充满向上的力量💪。' == '首次美化值我是一名热爱生活与成长的追光者🌱，坚信收获与挑战皆是生命馈赠的风景🎐。每日以坚定步履追逐热爱，让平凡日常沉淀为内心笃定的力量💪。在知识探索中突破自我边界🧩，于细微处捕捉生活美学的闪光✨，将每一刻都酿成值得珍藏的记忆。面对挑战始终以热忱拥抱，视其为生命厚度的雕刻刀🎨，在破局中看见更辽阔的世界🌍。愿以真诚与坚持，把每个平凡瞬间都过成值得回味的风景画卷🖼️。'
+  - 首次美化值我是一名热爱生活与成长的追光者🌱，坚信收获与挑战皆是生命馈赠的风景🎐。每日以坚定步履追逐热爱，让平凡日常沉淀为内心笃定的力量💪。在知识探索中突破自我边界🧩，于细微处捕捉生活美学的闪光✨，将每一刻都酿成值得珍藏的记忆。面对挑战始终以热忱拥抱，视其为生命厚度的雕刻刀🎨，在破局中看见更辽阔的世界🌍。愿以真诚与坚持，把每个平凡瞬间都过成值得回味的风景画卷🖼️。
+  + 我是一名热爱生活的人🌿，始终相信温暖的音乐能温柔治愈疲惫的心灵🎵，让日常的小美好成为生活的调味剂。我享受在悠闲的工作节奏中沉淀自我📚，通过细致观察与耐心倾听，发现工作中的每一处治愈角落✨，将压力转化为成长的养分🌱。在忙碌与宁静的平衡中，我学会用热爱点亮平凡日常，用真诚对待每一份小确幸，让疲惫在时光里悄悄消融，让生活始终充满向上的力量💪。
+[I 2026-02-07 13:51:47,306 minium minitest#796 _callTestMethod] end test method
+[D 2026-02-07 13:51:47,307 minium minitest#799 _miniTearDown] =========Current case Down: test_demo_two=========
+[I 2026-02-07 13:51:47,309 minium minitest#897 capture] capture teardown.png
+[D 2026-02-07 13:51:47,310 minium.Conn7888 connection#427 _safely_send] SEND > [1795108147888]{"id":"544e51e6-4fa3-4eb5-b20d-8d0133da9abb","method":"App.captureScreenshot","params":{}}
+[D 2026-02-07 13:51:47,553 minium.Conn7888 connection#660 __on_message] RECV < [1795108147888]{"id":"544e51e6-4fa3-4eb5-b20d-8d0133da9abb","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXl8HMWZ/1/dPfetmdHoPixZtmTJluXbBl8YGxxjG8wREgjYJBhCyCZkk2yS776WkGwuslly7C8HLFe4E4cFjCFgfIDB4EuyjWz51H2PRjOa++jp/v1RrdFMHzM9kgDZPO/Xy/LM9FNVT3dXf+qp6upqoqamBgEA8LlHqVSSn7UPAABMFUAOAADgADkAAIAD5AAAAA6QAwAAOEAOAADgADkAAIAD5AAAAA6QAwAAOEAOAADgADkAAIAD5AAAAA6QAwAAOEAOAADgADkAAIAD5AAAAA6QAwAAOEAOAADgADkAAIAD5AAAAA6QAwAAOEAOAADgADkAAIAD5AAAAA6QAwAAOEAOAADgADkAAIAD5AAAAA6QAwAAO
+[I 2026-02-07 13:51:47,558 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-02-07 13:51:47,560 minium basenative#63 wrapper] call BaseNative.get_start_up end 
+[E 2026-02-07 13:51:47,578 minium assertbase#390 _get_stack_info] <bound method DemoTest.test_demo_two of <test.demo.DemoTest testMethod=test_demo_two>>
+Traceback (most recent call last):
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 43, in testPartExecutor
+    yield
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\libs\unittest\case.py", line 125, in run
+    self._callTestMethod(testMethod)
+    ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\Mandy\AppData\Local\Programs\Python\Python313\Lib\site-packages\minium\framework\minitest.py", line 789, in _callTestMethod
+    method()
+    ~~~~~~^^
+  File "D:\FreeTrust\FreeU_WX_Minium\test\demo.py", line 49, in test_demo_two
+    assert start == end,f"失败"
+AssertionError: 失败
+assert '我是一名热爱生活的人🌿，始终相信温暖的音乐能温柔治愈疲惫的心灵🎵，让日常的小美好成为生活的调味剂。我享受在悠闲的工作节奏中沉淀自我📚，通过细致观察与耐心倾听，发现工作中的每一处治愈角落✨，将压力转化为成长的养分🌱。在忙碌与宁静的平衡中，我学会用热爱点亮平凡日常，用真诚对待每一份小确幸，让疲惫在时光里悄悄消融，让生活始终充满向上的力量💪。' == '首次美化值我是一名热爱生活与成长的追光者🌱，坚信收获与挑战皆是生命馈赠的风景🎐。每日以坚定步履追逐热爱，让平凡日常沉淀为内心笃定的力量💪。在知识探索中突破自我边界🧩，于细微处捕捉生活美学的闪光✨，将每一刻都酿成值得珍藏的记忆。面对挑战始终以热忱拥抱，视其为生命厚度的雕刻刀🎨，在破局中看见更辽阔的世界🌍。愿以真诚与坚持，把每个平凡瞬间都过成值得回味的风景画卷🖼️。'
+  - 首次美化值我是一名热爱生活与成长的追光者🌱，坚信收获与挑战皆是生命馈赠的风景🎐。每日以坚定步履追逐热爱，让平凡日常沉淀为内心笃定的力量💪。在知识探索中突破自我边界🧩，于细微处捕捉生活美学的闪光✨，将每一刻都酿成值得珍藏的记忆。面对挑战始终以热忱拥抱，视其为生命厚度的雕刻刀🎨，在破局中看见更辽阔的世界🌍。愿以真诚与坚持，把每个平凡瞬间都过成值得回味的风景画卷🖼️。
+  + 我是一名热爱生活的人🌿，始终相信温暖的音乐能温柔治愈疲惫的心灵🎵，让日常的小美好成为生活的调味剂。我享受在悠闲的工作节奏中沉淀自我📚，通过细致观察与耐心倾听，发现工作中的每一处治愈角落✨，将压力转化为成长的养分🌱。在忙碌与宁静的平衡中，我学会用热爱点亮平凡日常，用真诚对待每一份小确幸，让疲惫在时光里悄悄消融，让生活始终充满向上的力量💪。
+[W 2026-02-07 13:51:47,581 minium assertbase#354 _log_info_when_error] config: {'debug': True, 'base_dir': 'D:\\FreeTrust\\FreeU_WX_Minium', 'platform': 'ide', 'app': 'wx', 'debug_mode': 'debug', 'close_ide': False, 'auto_capture': 'auto', 'check_mp_foreground': True, 'auto_relaunch': True, 'device_desire': {'serial': 'UQG0220509034218', 'uiautomator_version': 2}, 'account_info': {}, 'report_usage': True, 'remote_connect_timeout': 300, 'request_timeout': 60, 'use_push': True, 'full_reset': False, 'outputs': 'outputs', 'enable_app_log': True, 'enable_network_panel': True, 'project_path': 'D:/FreeTrust/Project/fu-taro-card', 'dev_tool_path': 'C:/Program Files (x86)/Tencent/微信web开发者工具/cli.bat', 'test_port': 9420, 'mock_native_modal': None, 'mock_request': [], 'auto_authorize': True, 'audits': True, 'teardown_snapshot': False, 'mock_images_dir': '', 'mock_images': {}, 'need_perf': False, 'appid': None, 'enable_h5': True, 'autofix': True, 'mini_program_app_id': 'wxf270e6bcbda7bf7d', 'connect_timeout': 30, 'use_multi_process': False, 'framework_capture': True, 'error_capture': False, 'assert_capture': True, 'create_time': '20260207135123', 'case_output': 'outputs\\20260207135123\\test_demo_two\\20260207135145284883'}
+[W 2026-02-07 13:51:47,584 minium assertbase#355 _log_info_when_error] build info: {'version': '1.6.0', 'revision': '33ce5b50b34ec18c51c054a7cc1bdfb3ab0a451b', 'branch': 'master', 'update_at': '2024-10-09 21:08:56'}
+[W 2026-02-07 13:51:47,587 minium minitest#1029 _log_info_when_error] mini: 基础库3.8.0, 开发者工具3.8.0
+[W 2026-02-07 13:51:47,588 minium minitest#1031 _log_info_when_error] native: <minium.native.wx_native.idenative.IdeNative object at 0x000001A1F4C89010>
