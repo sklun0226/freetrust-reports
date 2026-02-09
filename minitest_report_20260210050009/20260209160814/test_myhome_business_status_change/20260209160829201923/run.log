@@ -1,0 +1,174 @@
+[I 2026-02-09 16:08:29,203 minium minitest#432 _miniSetUp] =========Current case: test_myhome_business_status_change=========
+[I 2026-02-09 16:08:29,204 minium minitest#435 _miniSetUp] package info: D:.FreeTrust.FreeU_WX_Minium.test.test_home_page, case info: HomeTest.test_myhome_business_status_change
+[I 2026-02-09 16:08:29,204 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-02-09 16:08:29,204 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-02-09 16:08:29,204 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-02-09 16:08:29,205 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-02-09 16:08:29,205 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[D 2026-02-09 16:08:29,207 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"a2686ad5-ddb7-49e9-8a80-b3c2456ab855","method":"App.callWxMethod","params":{"method":"getLaunchOptionsSync","args":[]}}
+[D 2026-02-09 16:08:29,210 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"a2686ad5-ddb7-49e9-8a80-b3c2456ab855","result":{"result":{"path":"pages/index/index","query":{},"scene":1001,"referrerInfo":{},"mode":"default","apiCategory":"default"}}}
+[I 2026-02-09 16:08:29,211 minium.App6384 app#950 relaunch] ReLaunch: /pages/index/index
+[D 2026-02-09 16:08:29,211 minium.Conn1680 connection#427 _safely_send] ASYNC_SEND > [2003731911680]{"id":"902716be-5bfd-42a0-90c2-9fc6feeb7401","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/index/index"}]}}
+[D 2026-02-09 16:08:29,214 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/index/index"}]}}
+[I 2026-02-09 16:08:30,063 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:30,064 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:30,065 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"46b8ff0c-80d3-48f1-baf5-e74ef4127876","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:30,067 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"46b8ff0c-80d3-48f1-baf5-e74ef4127876","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-09 16:08:30,068 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:30,070 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:30,070 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:30,071 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:30,440 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","query":{},"openType":"reLaunch","timeStamp":1770624510430,"webviewId":4,"routeEventId":"4_1770624509894","renderer":"webview"},1770624510432]}}
+[I 2026-02-09 16:08:30,442 minium.App6384 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'query': {}, 'openType': 'reLaunch', 'timeStamp': 1770624510430, 'webviewId': 4, 'routeEventId': '4_1770624509894', 'renderer': 'webview'}, 1770624510432]}
+[D 2026-02-09 16:08:30,445 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"902716be-5bfd-42a0-90c2-9fc6feeb7401","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2026-02-09 16:08:30,446 minium.Conn1680 connection#704 _handle_async_msg] received async msg: 902716be-5bfd-42a0-90c2-9fc6feeb7401
+[I 2026-02-09 16:08:30,449 minium minitest#897 capture] capture setup.png
+[D 2026-02-09 16:08:30,450 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"bed24b00-e438-4730-9321-24008232abe7","method":"App.captureScreenshot","params":{}}
+[D 2026-02-09 16:08:30,544 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"bed24b00-e438-4730-9321-24008232abe7","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAADAdJREFUeJzt3EtvVeUewGHaUmkt9QJBYKckxQEQwaoTE+Uy0MSJDJ3pyE/itzDxWzhTo4HEeGnUCXEAhIaQeKFYQVKxhZbuM+A3ODkxJ05sjft5Bnv07uSfrJ1fVt613j02HA53AezaNb7TAwD/FHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQO
+[I 2026-02-09 16:08:30,548 minium minitest#487 _miniSetUp] =========case: test_myhome_business_status_change start=========
+[I 2026-02-09 16:08:30,549 minium minitest#788 _callTestMethod] call test method
+[I 2026-02-09 16:08:30,550 minium minitest#897 capture] capture 跳转至广场页前_160830.png
+[D 2026-02-09 16:08:30,551 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"c059b688-2881-423b-ac53-c0b55ef35ab4","method":"App.captureScreenshot","params":{}}
+[D 2026-02-09 16:08:30,624 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"c059b688-2881-423b-ac53-c0b55ef35ab4","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAADBlJREFUeJzt28+LlXXfwPFz5szM0VFSG0NNU8RfWEQQKREUbdoGroPqj6h9f0g/tgUtWgTtWgSJRBpYGBYMJRbZqKnlpM048yx6Lx6e+4bbZ5Hj7Xm91ueCz+p9ru+Pa7i2tjYAGAym1nsA4H4hB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDIHIARA6AyAEQOQAiB0DkAIgcAJEDI
+[I 2026-02-09 16:08:30,627 minium home_tab_page#60 goto_home_page] 第1次尝试跳转到广场页...
+[I 2026-02-09 16:08:30,628 minium.App6384 app#950 relaunch] ReLaunch: /pages/home/index
+[D 2026-02-09 16:08:30,629 minium.Conn1680 connection#427 _safely_send] ASYNC_SEND > [2003731911680]{"id":"0f27f01e-7671-474b-8c32-9fe9abc53b6c","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/home/index"}]}}
+[D 2026-02-09 16:08:30,633 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/home/index"}]}}
+[D 2026-02-09 16:08:30,848 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/pages/home/index"}]}}
+[I 2026-02-09 16:08:31,072 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:31,073 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:31,074 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"cbbde5e9-f485-48fb-be87-bdc383eab65f","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:31,075 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"cbbde5e9-f485-48fb-be87-bdc383eab65f","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-09 16:08:31,077 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:31,078 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:31,078 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:31,079 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:31,801 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/home/index","query":{},"openType":"reLaunch","timeStamp":1770624511751,"webviewId":5,"routeEventId":"5_1770624511300","renderer":"webview"},1770624511754]}}
+[I 2026-02-09 16:08:31,806 minium.App6384 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/home/index', 'query': {}, 'openType': 'reLaunch', 'timeStamp': 1770624511751, 'webviewId': 5, 'routeEventId': '5_1770624511300', 'renderer': 'webview'}, 1770624511754]}
+[D 2026-02-09 16:08:31,807 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"0f27f01e-7671-474b-8c32-9fe9abc53b6c","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2026-02-09 16:08:31,809 minium.Conn1680 connection#704 _handle_async_msg] received async msg: 0f27f01e-7671-474b-8c32-9fe9abc53b6c
+[I 2026-02-09 16:08:31,811 minium home_tab_page#68 goto_home_page] 进入广场页成功！
+[I 2026-02-09 16:08:31,813 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view user-avatar']
+[D 2026-02-09 16:08:31,814 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"f1bc9355-8e83-4429-b9d3-73e3c38a3605","method":"Page.getElements","params":{"selector":"view[class='h5-view user-avatar']","pageId":5}}
+[D 2026-02-09 16:08:32,079 minium basenative#983 __op_auto_authorize] after auto_authorize_callback, True. flag: True
+[D 2026-02-09 16:08:32,190 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"f1bc9355-8e83-4429-b9d3-73e3c38a3605","result":{"elements":[{"elementId":"01a8dc89-0074-458f-b27c-ee89a31f4486","tagName":"view"}]}}
+[I 2026-02-09 16:08:32,192 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287BAB4D0>]
+[I 2026-02-09 16:08:32,193 minium home_tab_page#88 goto_home_page] 进入广场页成功
+[I 2026-02-09 16:08:32,194 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view user-avatar']
+[D 2026-02-09 16:08:32,195 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"0827d2d5-d86f-4022-999b-f3b07b666777","method":"Page.getElements","params":{"selector":"view[class='h5-view user-avatar']","pageId":5}}
+[D 2026-02-09 16:08:32,360 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"0827d2d5-d86f-4022-999b-f3b07b666777","result":{"elements":[{"elementId":"01a8dc89-0074-458f-b27c-ee89a31f4486","tagName":"view"}]}}
+[I 2026-02-09 16:08:32,362 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287BBAC10>]
+[I 2026-02-09 16:08:32,362 minium minitest#897 capture] capture 跳转至广场页后_160832.png
+[D 2026-02-09 16:08:32,363 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"621b63c1-3c1c-48d5-9dbb-6dc76f09b7bb","method":"App.captureScreenshot","params":{}}
+[D 2026-02-09 16:08:32,514 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"621b63c1-3c1c-48d5-9dbb-6dc76f09b7bb","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAAIABJREFUeJzsnXl8HMWZ96vvnvue0X2MZF22LNnyiW2MIRjCYe4rEGDDshDIAQnJEhI2yS65d5NsQiAQEkgCwZAElssYY4htbGNblixbknXf0tz31XfX+0eJiZAv2SgQXvr7hz/yTHdVT3fXr556nqeqMJ7ngYaGhgYA+Ed9ARoaGv8saHKgoaExjSYHGhoa02hyoKGhMY0mBxoaGtNocqChoTGNJgcaGhrTaHKgoaExjSYHGhoa02hyoKGhMY0mBxoaGtNocqChoTGNJgcaGhrTaHKgoaExjSYHGhoa02hyoKGhMY0mBxoaGtNocqChoTGNJgcaGhrTaHKgoaExjSYHGhoa02hyoKGhMY0mBxoaGtNocqChoTGNJgcaGhrTa
+[I 2026-02-09 16:08:32,517 minium page#716 _get_elements_by_css] try to get elements: button[class='h5-button switch-button']
+[D 2026-02-09 16:08:32,518 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"eb2201d7-f889-4cbb-84d2-65d27f2b2eb6","method":"Page.getElements","params":{"selector":"button[class='h5-button switch-button']","pageId":5}}
+[D 2026-02-09 16:08:32,813 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"eb2201d7-f889-4cbb-84d2-65d27f2b2eb6","result":{"elements":[{"elementId":"1ad55842-c6d9-481f-a14c-68524fd0eb20","tagName":"button"}]}}
+[I 2026-02-09 16:08:32,814 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287BBAC10>]
+[I 2026-02-09 16:08:32,815 minium page#716 _get_elements_by_css] try to get elements: button[class='h5-button switch-button']
+[D 2026-02-09 16:08:32,816 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"338d0130-f8a1-46ff-bc53-452cc89c888d","method":"Page.getElements","params":{"selector":"button[class='h5-button switch-button']","pageId":5}}
+[D 2026-02-09 16:08:32,950 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"338d0130-f8a1-46ff-bc53-452cc89c888d","result":{"elements":[{"elementId":"1ad55842-c6d9-481f-a14c-68524fd0eb20","tagName":"button"}]}}
+[I 2026-02-09 16:08:32,951 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287B83CE0>]
+[D 2026-02-09 16:08:32,951 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"dae6c1d5-30e0-4f94-9e11-dab9a42fc11c","method":"Element.tap","params":{"elementId":"1ad55842-c6d9-481f-a14c-68524fd0eb20","pageId":5}}
+[D 2026-02-09 16:08:33,223 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"dae6c1d5-30e0-4f94-9e11-dab9a42fc11c","result":{"pageX":167,"pageY":117.5,"clientX":167,"clientY":117.5}}
+[I 2026-02-09 16:08:33,225 minium basenative#59 wrapper] call BaseNative.notify
+[D 2026-02-09 16:08:33,227 minium basenative#870 notify] receive a notify signal
+[I 2026-02-09 16:08:33,228 minium basenative#63 wrapper] call BaseNative.notify end None
+[D 2026-02-09 16:08:33,228 minium basenative#981 __op_auto_authorize] before auto_authorize_callback
+[I 2026-02-09 16:08:33,230 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:33,234 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:33,235 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"fdd1c73f-d18f-4ffb-85b6-6a95e216d7ab","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:33,237 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"fdd1c73f-d18f-4ffb-85b6-6a95e216d7ab","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-09 16:08:33,237 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:33,238 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:33,238 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:33,239 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:33,268 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"navigateTo_before_global","args":[{"url":"/pages5/completeInfo/index"}]}}
+[I 2026-02-09 16:08:34,240 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:34,241 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:34,242 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"67e50746-6174-44d4-bddc-270f730ff485","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:34,243 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"67e50746-6174-44d4-bddc-270f730ff485","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-09 16:08:34,244 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:34,245 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:34,245 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:34,248 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[I 2026-02-09 16:08:35,249 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:35,250 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:35,251 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"63e8b40c-3a53-4bb3-a371-1aedd249092b","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:35,253 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"63e8b40c-3a53-4bb3-a371-1aedd249092b","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-09 16:08:35,254 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:35,254 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:35,255 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:35,256 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:36,263 minium basenative#983 __op_auto_authorize] after auto_authorize_callback, True. flag: True
+[D 2026-02-09 16:08:37,083 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages5/completeInfo/index","query":{},"openType":"navigateTo","timeStamp":1770624517068,"webviewId":6,"routeEventId":"6_1770624516973","renderer":"webview"},1770624517069]}}
+[I 2026-02-09 16:08:37,085 minium.App6384 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages5/completeInfo/index', 'query': {}, 'openType': 'navigateTo', 'timeStamp': 1770624517068, 'webviewId': 6, 'routeEventId': '6_1770624516973', 'renderer': 'webview'}, 1770624517069]}
+[I 2026-02-09 16:08:38,230 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view friendship-edit']
+[D 2026-02-09 16:08:38,231 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"ef901b4d-0f41-4ca7-b9a3-7028c0633d0f","method":"Page.getElements","params":{"selector":"view[class='h5-view friendship-edit']","pageId":6}}
+[D 2026-02-09 16:08:39,177 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"ef901b4d-0f41-4ca7-b9a3-7028c0633d0f","result":{"elements":[{"elementId":"c545367f-4757-499d-a6e3-f9fc641757ef","tagName":"view"}]}}
+[I 2026-02-09 16:08:39,178 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287B83360>]
+[I 2026-02-09 16:08:39,179 minium page#716 _get_elements_by_css] try to get elements: image[src='https://obs.freeuuu.com/public/freeu-card/friendship/icon_state_switch.png']
+[D 2026-02-09 16:08:39,180 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"7cee3a5d-682e-4baa-b646-3bd6d4965ad2","method":"Page.getElements","params":{"selector":"image[src='https://obs.freeuuu.com/public/freeu-card/friendship/icon_state_switch.png']","pageId":6}}
+[D 2026-02-09 16:08:39,539 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"7cee3a5d-682e-4baa-b646-3bd6d4965ad2","result":{"elements":[{"elementId":"c9fb97dd-a50d-40a9-add5-f622196f1aab","tagName":"image"}]}}
+[I 2026-02-09 16:08:39,540 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287787530>]
+[I 2026-02-09 16:08:39,541 minium page#716 _get_elements_by_css] try to get elements: image[src='https://obs.freeuuu.com/public/freeu-card/friendship/icon_state_switch.png']
+[D 2026-02-09 16:08:39,541 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"770a3fae-ed6d-472e-aa4f-9cd9baeaf5a0","method":"Page.getElements","params":{"selector":"image[src='https://obs.freeuuu.com/public/freeu-card/friendship/icon_state_switch.png']","pageId":6}}
+[D 2026-02-09 16:08:39,660 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"770a3fae-ed6d-472e-aa4f-9cd9baeaf5a0","result":{"elements":[{"elementId":"c9fb97dd-a50d-40a9-add5-f622196f1aab","tagName":"image"}]}}
+[I 2026-02-09 16:08:39,661 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287C199D0>]
+[D 2026-02-09 16:08:39,662 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"0e081f52-7062-494a-994e-52a01f3542d2","method":"Element.tap","params":{"elementId":"c9fb97dd-a50d-40a9-add5-f622196f1aab","pageId":6}}
+[D 2026-02-09 16:08:39,886 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"0e081f52-7062-494a-994e-52a01f3542d2","result":{"pageX":36,"pageY":113,"clientX":36,"clientY":113}}
+[I 2026-02-09 16:08:39,887 minium basenative#59 wrapper] call BaseNative.notify
+[D 2026-02-09 16:08:39,888 minium basenative#870 notify] receive a notify signal
+[I 2026-02-09 16:08:39,888 minium basenative#63 wrapper] call BaseNative.notify end None
+[D 2026-02-09 16:08:39,888 minium basenative#981 __op_auto_authorize] before auto_authorize_callback
+[I 2026-02-09 16:08:39,889 minium page#716 _get_elements_by_css] try to get elements: text[class='status-item__left-label']
+[I 2026-02-09 16:08:39,890 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[D 2026-02-09 16:08:39,890 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"09a01158-48bc-4986-93f1-d5cd72508e22","method":"Page.getElements","params":{"selector":"text[class='status-item__left-label']","pageId":6}}
+[I 2026-02-09 16:08:39,891 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:39,892 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"d6006b37-c3d5-42a9-bc47-1b8a908a93cc","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:39,894 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"d6006b37-c3d5-42a9-bc47-1b8a908a93cc","result":{"error":{"message":"authorizeAllow failed"}}}
+[D 2026-02-09 16:08:39,894 minium.Conn1680 connection#492 _receive_response] rewait for 09a01158-48bc-4986-93f1-d5cd72508e22
+[W 2026-02-09 16:08:39,894 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:39,895 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:39,896 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:39,896 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:40,156 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"09a01158-48bc-4986-93f1-d5cd72508e22","result":{"elements":[{"elementId":"877df0f7-8e92-4e57-adce-1381bf9740f9","tagName":"text"}]}}
+[I 2026-02-09 16:08:40,157 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000001D287C19590>]
+[D 2026-02-09 16:08:40,158 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"d6811b30-52af-41a1-81ed-27a6e16f9a5c","method":"Element.getDOMProperties","params":{"names":["innerText"],"elementId":"877df0f7-8e92-4e57-adce-1381bf9740f9","pageId":6}}
+[D 2026-02-09 16:08:40,226 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"d6811b30-52af-41a1-81ed-27a6e16f9a5c","result":{"properties":["商务状态"]}}
+[D 2026-02-09 16:08:40,228 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"9ea613f1-bd3f-408f-b420-c6b035043d9b","method":"Element.tap","params":{"elementId":"877df0f7-8e92-4e57-adce-1381bf9740f9","pageId":6}}
+[D 2026-02-09 16:08:40,441 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"9ea613f1-bd3f-408f-b420-c6b035043d9b","result":{"pageX":102,"pageY":459.5,"clientX":102,"clientY":459.5}}
+[I 2026-02-09 16:08:40,442 minium basenative#59 wrapper] call BaseNative.notify
+[D 2026-02-09 16:08:40,443 minium basenative#870 notify] receive a notify signal
+[I 2026-02-09 16:08:40,443 minium basenative#63 wrapper] call BaseNative.notify end None
+[I 2026-02-09 16:08:40,444 minium minitest#897 capture] capture 个人说明书已切换至商务状态_160840.png.png
+[D 2026-02-09 16:08:40,444 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"502850d3-d901-4985-a733-b46e5189c69b","method":"App.captureScreenshot","params":{}}
+[D 2026-02-09 16:08:40,855 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"502850d3-d901-4985-a733-b46e5189c69b","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAAIABJREFUeJzsfdui3DqqLbjz/7+7e5/eLc6DuAwQsl01Z5LKillZs2RJ1gXBAF1s83//+1966KGH/noSkeN3t+Ghhx76FPoxf0SEiJj5i+GnqKeop6g/tCgieryDhx56SIn/7//+73e34aGHHvr9JCI/3MF46KGH/nJ6JgsPPfSQ0gMHDz30kNIDBw899JDSAwcPPfSQ0gMHDz30kNIDBw899JDSj+86C+UHm56inqKeov7EoujxDh566CGn51TiQw89pPScSnzooYeIiOR5wPmhhx5yeuDgoYceUnrg4KGHHlJ64OChhx5SeuDgoYceUnrg4KGHHlL64SeZHnroob+cHu/goYceUnrg4KGHHlJ64OChhx5SeuDgoYceUnrg4
+[I 2026-02-09 16:08:40,861 minium minitest#897 capture] capture 个人说明书切换商务状态_160840.png.png
+[D 2026-02-09 16:08:40,863 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"b0817a21-bce8-44af-9214-af6cbfcfe9cc","method":"App.captureScreenshot","params":{}}
+[I 2026-02-09 16:08:40,897 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:40,899 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:40,900 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"78c47505-9b3f-4d88-9028-51516b73fd65","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:40,902 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"78c47505-9b3f-4d88-9028-51516b73fd65","result":{"error":{"message":"authorizeAllow failed"}}}
+[D 2026-02-09 16:08:40,904 minium.Conn1680 connection#492 _receive_response] rewait for b0817a21-bce8-44af-9214-af6cbfcfe9cc
+[W 2026-02-09 16:08:40,904 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:40,907 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:40,908 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:40,909 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:41,166 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"b0817a21-bce8-44af-9214-af6cbfcfe9cc","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvel2HDmSJmoGeOxcRVJbVlZNz+lz+l3q3fpnv9u9faunq6eyMkWJErdYfYHdH4bFAId7BClKoqSwTDHgcOyAfTAzLI7/8R//AXva055+DkLErle3t7fqaxZlT3va03OmPRzsaU8/ERGRd7TdezjY0572ZKn41gXY05729FXJCwVt91462NOe9mRpDwd72tOeLO3hYE972pOlPRzsaU97srSHgz3taU+W9nCwpz3tydIeDva0pz1ZKnjhkXcyf757n9Q+qX1SzzypHtpLB3va054s6b/+9a/fugx72tOevhL1CAibzabYKj/saU97+kloryzsaU97srSHgz3taU+W9nCwpz3tydIeDva0pz1Z2sPBnva0J0t7O
+[I 2026-02-09 16:08:41,911 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-02-09 16:08:41,912 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-02-09 16:08:41,912 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"655fc049-be84-4386-9330-b8c239513d41","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-02-09 16:08:41,914 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"655fc049-be84-4386-9330-b8c239513d41","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-02-09 16:08:41,914 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-02-09 16:08:41,914 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-02-09 16:08:41,915 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-02-09 16:08:41,915 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-02-09 16:08:42,915 minium basenative#983 __op_auto_authorize] after auto_authorize_callback, True. flag: True
+[I 2026-02-09 16:08:43,171 minium minitest#796 _callTestMethod] end test method
+[D 2026-02-09 16:08:43,171 minium minitest#799 _miniTearDown] =========Current case Down: test_myhome_business_status_change=========
+[I 2026-02-09 16:08:43,172 minium minitest#897 capture] capture teardown.png
+[D 2026-02-09 16:08:43,172 minium.Conn1680 connection#427 _safely_send] SEND > [2003731911680]{"id":"90ed1d46-7dc5-4328-918a-600b22de5d2d","method":"App.captureScreenshot","params":{}}
+[D 2026-02-09 16:08:43,311 minium.Conn1680 connection#660 __on_message] RECV < [2003731911680]{"id":"90ed1d46-7dc5-4328-918a-600b22de5d2d","result":{"data":"iVBORw0KGgoAAAANSUhEUgAAAVoAAAMNCAIAAABWJytHAAAAAXNSR0IArs4c6QAAIABJREFUeJzsvXmYHVWdP/z9nlPL3W/v3emk00k6e9NZCAQIwciO7C+KiCAwOsrgNoo4zjyjP0cd56fjyPP6DoobjjIK6qAjIFuQLZAASUjIvm+d7k7vy91rO+f9o5Zbde/tJRiU5Xyeh3C76tTZ6nw/3+UshYsWLQIBAYF3PWRZJn/tOggICLxVIOhAQEDAgaADAQEBB4IOBAQEHAg6EBAQcCDoQEBAwIGgAwEBAQeCDgQEBBwIOhAQEHAg6EBAQMCBoAMBAQEHgg4EBAQcCDoQEBBwIOhAQEDAgaADAQEBB4IOBAQEHAg6EBAQcCDoQEBAwIGgAwEBAQeCDgQEBBwIOhAQEHAg6EBAQMCBoAMBAQEHgg4EBAQcCDoQEBBwI
+[I 2026-02-09 16:08:43,315 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-02-09 16:08:43,316 minium basenative#63 wrapper] call BaseNative.get_start_up end 
