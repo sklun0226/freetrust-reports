@@ -1,0 +1,51 @@
+{
+    "case_name": "test_business_like_collect",
+    "run_time": "20260306 05:00:24",
+    "test_type": "DynamicTest",
+    "case_doc": null,
+    "success": false,
+    "failures": "",
+    "errors": "Traceback (most recent call last):\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\framework\\libs\\unittest\\suite.py\", line 64, in _handleClassSetUp\n    _miniClassSetUp()\n    ~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\framework\\minitest.py\", line 334, in _miniClassSetUp\n    native, mini, miniprogram = init_miniprogram(cls.CONFIG)\n                                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\framework\\minitest.py\", line 204, in init_miniprogram\n    mini = get_minium(cfg)\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\framework\\minitest.py\", line 164, in get_minium\n    g_minium = minium.miniprogram.get_minium_driver(conf=cfg, native=g_native)\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\miniprogram\\__init__.py\", line 28, in get_minium_driver\n    return APP[application](conf, *args, **kwargs)\n           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 160, in __init__\n    self.launch_weapp()\n    ~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 148, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 638, in launch_weapp\n    self.launch_dev_tool()\n    ~~~~~~~~~~~~~~~~~~~~^^\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\miniprogram\\base_driver\\minium_log.py\", line 148, in wrapper\n    result = func(*args, **kwargs)\n  File \"C:\\Users\\Mandy\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\minium\\miniprogram\\wx_minium.py\", line 776, in launch_dev_tool\n    raise MiniLaunchError(err_msg)\nminium.framework.exception.MiniLaunchError: [error] {\n  code: 'ECONNRESET',\n  message: 'Error: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:8899Error: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:8899\\n' +\n    '    at ClientRequest.<anonymous> (C:\\\\Program Files (x86)\\\\Tencent\\\\\u5fae\u4fe1web\u5f00\u53d1\u8005\u5de5\u5177\\\\code\\\\package.nw\\\\node_modules.wxvpkg\\\\tunnel-agent\\\\index.js:1:3444)\\n' +\n    '    at Object.onceWrapper (node:events:514:26)\\n' +\n    '    at ClientRequest.emit (node:events:394:28)\\n' +\n    '    at Socket.socketErrorListener (node:_http_client:447:9)\\n' +\n    '    at Socket.emit (node:events:394:28)\\n' +\n    '    at emitErrorNT (node:internal/streams/destroy:193:8)\\n' +\n    '    at emitErrorCloseNT (node:internal/streams/destroy:158:3)\\n' +\n    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)'\n}\n\n",
+    "start_timestamp": 1772744424.7605891,
+    "is_failure": false,
+    "is_error": true,
+    "module": "D:.FreeTrust.FreeU_WX_Minium.test.test_find_page",
+    "package": "test",
+    "failed_line_num": 334,
+    "device": {},
+    "log_filename": "run.log",
+    "error_type": "MiniLaunchError",
+    "error_value": "[error] {\n  code: 'ECONNRESET',\n  message: 'Error: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:8899Error: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:8899\\n' +\n    '    at ClientRequest.<anonymous> (C:\\\\Program Files (x86)\\\\Tencent\\\\\u5fae\u4fe1web\u5f00\u53d1\u8005\u5de5\u5177\\\\code\\\\package.nw\\\\node_modules.wxvpkg\\\\tunnel-agent\\\\index.js:1:3444)\\n' +\n    '    at Object.onceWrapper (node:events:514:26)\\n' +\n    '    at ClientRequest.emit (node:events:394:28)\\n' +\n    '    at Socket.socketErrorListener (node:_http_client:447:9)\\n' +\n    '    at Socket.emit (node:events:394:28)\\n' +\n    '    at emitErrorNT (node:internal/streams/destroy:193:8)\\n' +\n    '    at emitErrorCloseNT (node:internal/streams/destroy:158:3)\\n' +\n    '    at processTicksAndRejections (node:internal/process/task_queues:83:21)'\n}\n",
+    "error_extra_info": "",
+    "error_stages": [
+        "_miniClassSetUp"
+    ],
+    "screen_info": [],
+    "step_info": [],
+    "check_list": [],
+    "assert_list": [],
+    "stop_timestamp": 1772744424.761568,
+    "appId": "",
+    "appName": "",
+    "source": {
+        "code": [
+            "    @classmethod\n",
+            "    def _miniClassSetUp(cls):\n",
+            "        logger.debug(\"=====================\")\n",
+            "        logger.debug(\"Testing class\uff1a%s\" % cls.__name__)\n",
+            "        logger.debug(\"=====================\")\n",
+            "        super(MiniTest, cls)._miniClassSetUp()\n",
+            "        if not cls.CONFIG.report_usage:\n",
+            "            minium.miniprogram.base_driver.minium_log.existFlag = 1\n",
+            "\n",
+            "        native, mini, miniprogram = init_miniprogram(cls.CONFIG)\n",
+            "        cls.native = native\n",
+            "        cls.mini = mini\n",
+            "        if cls.CONFIG.need_perf:  # start get perf thread\n",
+            "            cls.native.start_get_perf(timeinterval=0.8)\n",
+            "        cls.DEVICE_INFO[\"system_info\"] = miniprogram.system_info\n"
+        ],
+        "start": 325
+    },
+    "filename": "result.json"
+}
