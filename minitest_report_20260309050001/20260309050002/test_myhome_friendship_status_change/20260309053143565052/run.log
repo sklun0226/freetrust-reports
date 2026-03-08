@@ -1,0 +1,194 @@
+[I 2026-03-09 05:31:43,566 minium minitest#432 _miniSetUp] =========Current case: test_myhome_friendship_status_change=========
+[I 2026-03-09 05:31:43,567 minium minitest#435 _miniSetUp] package info: D:.FreeTrust.FreeU_WX_Minium.test.test_home_page, case info: HomeTest.test_myhome_friendship_status_change
+[I 2026-03-09 05:31:43,567 minium basenative#59 wrapper] call BaseNative.check_connection
+[I 2026-03-09 05:31:43,568 minium basenative#63 wrapper] call BaseNative.check_connection end True
+[I 2026-03-09 05:31:43,568 minium basenative#59 wrapper] call BaseNative.back_to_miniprogram
+[I 2026-03-09 05:31:43,569 minium basenative#794 back_to_miniprogram] try back_to_miniprogram 3
+[I 2026-03-09 05:31:43,569 minium basenative#63 wrapper] call BaseNative.back_to_miniprogram end 
+[I 2026-03-09 05:31:43,569 minium.App6912 app#950 relaunch] ReLaunch: /pages/index/index
+[D 2026-03-09 05:31:43,570 minium.Conn2208 connection#427 _safely_send] ASYNC_SEND > [3132149572208]{"id":"50587af9-a9aa-46a2-9f13-cd004b343d88","method":"App.callWxMethod","params":{"method":"reLaunch","args":[{"url":"/pages/index/index"}]}}
+[D 2026-03-09 05:31:43,573 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"method":"App.bindingCalled","params":{"name":"reLaunch_before_global","args":[{"url":"/pages/index/index"}]}}
+[D 2026-03-09 05:31:45,455 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/index/index","query":{},"openType":"reLaunch","timeStamp":1773005505446,"webviewId":81,"routeEventId":"81_1773005504965","renderer":"webview"},1773005505448]}}
+[I 2026-03-09 05:31:45,457 minium.App6912 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/index/index', 'query': {}, 'openType': 'reLaunch', 'timeStamp': 1773005505446, 'webviewId': 81, 'routeEventId': '81_1773005504965', 'renderer': 'webview'}, 1773005505448]}
+[D 2026-03-09 05:31:45,458 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"50587af9-a9aa-46a2-9f13-cd004b343d88","result":{"result":{"errMsg":"reLaunch:ok"}}}
+[I 2026-03-09 05:31:45,459 minium.Conn2208 connection#704 _handle_async_msg] received async msg: 50587af9-a9aa-46a2-9f13-cd004b343d88
+[I 2026-03-09 05:31:45,461 minium minitest#897 capture] capture setup.png
+[D 2026-03-09 05:31:45,462 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"5fc524e1-2009-42bc-973b-538430504aca","method":"App.captureScreenshot","params":{}}
+[D 2026-03-09 05:31:45,510 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"5fc524e1-2009-42bc-973b-538430504aca","error":{"message":"fail to capture screenshot"}}
+[E 2026-03-09 05:31:45,511 minium.Conn2208 connection#668 __on_message] [5fc524e1-2009-42bc-973b-538430504aca]: fail to capture screenshot
+[E 2026-03-09 05:31:45,512 minium.App6912 app#679 screen_shot] fail to capture screenshot
+[W 2026-03-09 05:31:45,512 minium minitest#929 capture] D:\FreeTrust\FreeU_WX_Minium\outputs\20260309050002\test_myhome_friendship_status_change\20260309053143565052\images\setup.png not exists
+[I 2026-03-09 05:31:45,513 minium minitest#487 _miniSetUp] =========case: test_myhome_friendship_status_change start=========
+[I 2026-03-09 05:31:45,513 minium minitest#788 _callTestMethod] call test method
+[I 2026-03-09 05:31:45,514 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:31:45,515 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"0027b6fa-60ee-4911-a910-7295e1bd9bc7","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":81}}
+[D 2026-03-09 05:31:45,524 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"0027b6fa-60ee-4911-a910-7295e1bd9bc7","result":{"elements":[{"elementId":"92322448-ae17-41a4-8a4c-072fe21cd88c","tagName":"view"}]}}
+[I 2026-03-09 05:31:45,525 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002D944133610>]
+[D 2026-03-09 05:31:46,056 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"method":"App.bindingCalled","params":{"name":"switchTab_before_global","args":[{"url":"/pages/home/index"}]}}
+[I 2026-03-09 05:31:46,526 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:31:46,528 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"e67ab1b5-5508-48c9-b8d0-fbda5f1da79f","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":81}}
+[D 2026-03-09 05:31:47,231 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages/home/index","query":{},"openType":"switchTab","timeStamp":1773005507036,"webviewId":82,"routeEventId":"82_1773005506582","renderer":"webview"},1773005507038]}}
+[I 2026-03-09 05:31:47,234 minium.App6912 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages/home/index', 'query': {}, 'openType': 'switchTab', 'timeStamp': 1773005507036, 'webviewId': 82, 'routeEventId': '82_1773005506582', 'renderer': 'webview'}, 1773005507038]}
+[I 2026-03-09 05:32:46,537 minium check_loading_exists#18 check_loading_exists] loading_exists_status：False，0次
+[I 2026-03-09 05:32:46,541 minium minitest#897 capture] capture 当前页面已无loading_053246.png
+[D 2026-03-09 05:32:46,542 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"b71351ac-0fc1-415c-8406-70e62bb6f624","method":"App.captureScreenshot","params":{}}
+[D 2026-03-09 05:32:46,607 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"b71351ac-0fc1-415c-8406-70e62bb6f624","error":{"message":"fail to capture screenshot"}}
+[E 2026-03-09 05:32:46,608 minium.Conn2208 connection#668 __on_message] [b71351ac-0fc1-415c-8406-70e62bb6f624]: fail to capture screenshot
+[E 2026-03-09 05:32:46,609 minium.App6912 app#679 screen_shot] fail to capture screenshot
+[W 2026-03-09 05:32:46,609 minium minitest#929 capture] D:\FreeTrust\FreeU_WX_Minium\outputs\20260309050002\test_myhome_friendship_status_change\20260309053143565052\images\当前页面已无loading_053246.png not exists
+[I 2026-03-09 05:32:46,610 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:46,611 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"c8e4a3d8-e324-4d7d-bb46-3f91ad3d9914","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:46,621 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"c8e4a3d8-e324-4d7d-bb46-3f91ad3d9914","result":{"elements":[]}}
+[W 2026-03-09 05:32:46,622 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:47,623 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:47,625 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"4539e14b-5ff5-4f50-a962-8d379913050a","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:47,630 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"4539e14b-5ff5-4f50-a962-8d379913050a","result":{"elements":[]}}
+[W 2026-03-09 05:32:47,631 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:48,632 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:48,634 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"a96bcf68-b654-4e9c-97ea-11dbb4a723c1","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:48,642 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"a96bcf68-b654-4e9c-97ea-11dbb4a723c1","result":{"elements":[]}}
+[W 2026-03-09 05:32:48,643 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:49,644 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:49,646 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"f0df61fb-22ff-4a93-a7a0-6936ff18f224","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:49,652 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"f0df61fb-22ff-4a93-a7a0-6936ff18f224","result":{"elements":[]}}
+[W 2026-03-09 05:32:49,653 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:50,655 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:50,657 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"d3635cbc-1813-4433-89b8-478cf5a453ce","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:50,664 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"d3635cbc-1813-4433-89b8-478cf5a453ce","result":{"elements":[]}}
+[W 2026-03-09 05:32:50,665 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:51,666 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:51,668 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"8f481ace-1b19-4135-b9ab-df0b2bb46f9f","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:51,676 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"8f481ace-1b19-4135-b9ab-df0b2bb46f9f","result":{"elements":[]}}
+[W 2026-03-09 05:32:51,676 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:52,677 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:52,679 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"4c81f55b-a545-4176-82a7-be86ac2a789c","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:52,684 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"4c81f55b-a545-4176-82a7-be86ac2a789c","result":{"elements":[]}}
+[W 2026-03-09 05:32:52,685 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:53,687 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:53,689 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"7d2d3cd5-bc31-407e-ab27-cdb1beb492e4","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:53,696 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"7d2d3cd5-bc31-407e-ab27-cdb1beb492e4","result":{"elements":[]}}
+[W 2026-03-09 05:32:53,696 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:54,697 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:54,699 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"1153a019-7842-490e-b6ea-bf3786421284","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:54,705 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"1153a019-7842-490e-b6ea-bf3786421284","result":{"elements":[]}}
+[W 2026-03-09 05:32:54,706 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:55,707 minium page#716 _get_elements_by_css] try to get elements: view[class='loading-data']
+[D 2026-03-09 05:32:55,708 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"fbe1f494-5998-4fe6-85d1-c0a97482cccb","method":"Page.getElements","params":{"selector":"view[class='loading-data']","pageId":82}}
+[D 2026-03-09 05:32:55,713 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"fbe1f494-5998-4fe6-85d1-c0a97482cccb","result":{"elements":[]}}
+[W 2026-03-09 05:32:55,714 minium page#747 _get_elements_by_css] Could not found any element 'view[class='loading-data']' you need
+[I 2026-03-09 05:32:55,715 minium minitest#897 capture] capture 当前页面已无loading_053255.png
+[D 2026-03-09 05:32:55,715 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"a7c4df91-098c-4404-b308-358bdf979f0b","method":"App.captureScreenshot","params":{}}
+[D 2026-03-09 05:32:55,782 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"a7c4df91-098c-4404-b308-358bdf979f0b","error":{"message":"fail to capture screenshot"}}
+[E 2026-03-09 05:32:55,783 minium.Conn2208 connection#668 __on_message] [a7c4df91-098c-4404-b308-358bdf979f0b]: fail to capture screenshot
+[E 2026-03-09 05:32:55,784 minium.App6912 app#679 screen_shot] fail to capture screenshot
+[W 2026-03-09 05:32:55,785 minium minitest#929 capture] D:\FreeTrust\FreeU_WX_Minium\outputs\20260309050002\test_myhome_friendship_status_change\20260309053143565052\images\当前页面已无loading_053255.png not exists
+[I 2026-03-09 05:32:55,786 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view user-avatar']
+[D 2026-03-09 05:32:55,787 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"1ad67160-a293-4739-9100-d1be79f984b0","method":"Page.getElements","params":{"selector":"view[class='h5-view user-avatar']","pageId":82}}
+[D 2026-03-09 05:32:55,793 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"1ad67160-a293-4739-9100-d1be79f984b0","result":{"elements":[{"elementId":"97568b2c-acdc-42ca-99f7-2ab392d8deab","tagName":"view"}]}}
+[I 2026-03-09 05:32:55,794 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002D9441300F0>]
+[I 2026-03-09 05:32:55,795 minium page#716 _get_elements_by_css] try to get elements: button[class='h5-button switch-button']
+[D 2026-03-09 05:32:55,796 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"35c9e300-a762-47ab-8a47-9c16ef97b085","method":"Page.getElements","params":{"selector":"button[class='h5-button switch-button']","pageId":82}}
+[D 2026-03-09 05:32:55,802 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"35c9e300-a762-47ab-8a47-9c16ef97b085","result":{"elements":[{"elementId":"ea079969-2032-4603-b398-5008385cbc62","tagName":"button"}]}}
+[I 2026-03-09 05:32:55,803 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002D944131E50>]
+[I 2026-03-09 05:32:55,803 minium page#716 _get_elements_by_css] try to get elements: button[class='h5-button switch-button']
+[D 2026-03-09 05:32:55,804 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"b486c07b-ad9f-4b8f-83cc-78c71f1017dd","method":"Page.getElements","params":{"selector":"button[class='h5-button switch-button']","pageId":82}}
+[D 2026-03-09 05:32:55,808 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"b486c07b-ad9f-4b8f-83cc-78c71f1017dd","result":{"elements":[{"elementId":"ea079969-2032-4603-b398-5008385cbc62","tagName":"button"}]}}
+[I 2026-03-09 05:32:55,809 minium page#749 _get_elements_by_css] find elements success: [<minium.miniprogram.base_driver.element.BaseElement object at 0x000002D9441300F0>]
+[D 2026-03-09 05:32:55,809 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"4b7481d2-c7eb-44a6-b527-6127bc589706","method":"Element.tap","params":{"elementId":"ea079969-2032-4603-b398-5008385cbc62","pageId":82}}
+[D 2026-03-09 05:32:55,899 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"4b7481d2-c7eb-44a6-b527-6127bc589706","result":{"pageX":178,"pageY":123,"clientX":178,"clientY":123}}
+[I 2026-03-09 05:32:55,900 minium basenative#59 wrapper] call BaseNative.notify
+[D 2026-03-09 05:32:55,900 minium basenative#870 notify] receive a notify signal
+[I 2026-03-09 05:32:55,900 minium basenative#63 wrapper] call BaseNative.notify end None
+[D 2026-03-09 05:32:55,900 minium basenative#981 __op_auto_authorize] before auto_authorize_callback
+[I 2026-03-09 05:32:55,901 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-03-09 05:32:55,902 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-03-09 05:32:55,902 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"ed8ae3d2-cdb0-430f-bd83-83cd197645b0","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-03-09 05:32:55,903 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"ed8ae3d2-cdb0-430f-bd83-83cd197645b0","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-03-09 05:32:55,904 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-03-09 05:32:55,905 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-03-09 05:32:55,905 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-03-09 05:32:55,906 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-03-09 05:32:55,929 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"method":"App.bindingCalled","params":{"name":"navigateTo_before_global","args":[{"url":"/pages5/completeInfo/index"}]}}
+[D 2026-03-09 05:32:56,163 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"5a93cd98-713a-42bd-b455-f482591167bf","result":{"elements":[]}}
+[I 2026-03-09 05:32:56,164 minium.Conn2208 connection#704 _handle_async_msg] received async msg: 5a93cd98-713a-42bd-b455-f482591167bf, maybe command ignore response
+[I 2026-03-09 05:32:56,909 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-03-09 05:32:56,910 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-03-09 05:32:56,924 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"a5937f8b-b15a-4012-92ff-42b3788bd954","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-03-09 05:32:57,280 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"method":"App.bindingCalled","params":{"name":"onAppRouteDone","args":[{"path":"pages5/completeInfo/index","query":{},"openType":"navigateTo","timeStamp":1773005577273,"webviewId":83,"routeEventId":"83_1773005576485","renderer":"webview"},1773005577276]}}
+[I 2026-03-09 05:32:57,508 minium.App6912 app#1226 _on_route_changed] Route changed, {'name': 'onAppRouteDone', 'args': [{'path': 'pages5/completeInfo/index', 'query': {}, 'openType': 'navigateTo', 'timeStamp': 1773005577273, 'webviewId': 83, 'routeEventId': '83_1773005576485', 'renderer': 'webview'}, 1773005577276]}
+[D 2026-03-09 05:32:57,521 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"a5937f8b-b15a-4012-92ff-42b3788bd954","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-03-09 05:32:57,522 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-03-09 05:32:57,523 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-03-09 05:32:57,524 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-03-09 05:32:57,524 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[I 2026-03-09 05:32:58,525 minium basenative#59 wrapper] call IdeNative.allow_authorize
+[I 2026-03-09 05:32:58,528 minium basenative#59 wrapper] call IdeNative.send
+[D 2026-03-09 05:32:58,530 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"3023e22a-3fc3-4544-a98e-1e505923c45c","method":"Tool.native","params":{"method":"authorizeAllow","data":null}}
+[D 2026-03-09 05:32:58,533 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"3023e22a-3fc3-4544-a98e-1e505923c45c","result":{"error":{"message":"authorizeAllow failed"}}}
+[W 2026-03-09 05:32:58,535 minium idenative#77 _send] handle authorizeAllow error: authorizeAllow failed
+[I 2026-03-09 05:32:58,536 minium basenative#63 wrapper] call IdeNative.send end False
+[I 2026-03-09 05:32:58,537 minium basenative#62 wrapper] IdeNative.allow_authorize return False
+[I 2026-03-09 05:32:58,542 minium basenative#63 wrapper] call IdeNative.allow_authorize end False
+[D 2026-03-09 05:32:59,543 minium basenative#983 __op_auto_authorize] after auto_authorize_callback, True. flag: True
+[I 2026-03-09 05:33:00,901 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:00,902 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"b3e0d99f-0daf-4639-bb0c-17e5b3c004b7","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:00,908 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"b3e0d99f-0daf-4639-bb0c-17e5b3c004b7","result":{"elements":[]}}
+[W 2026-03-09 05:33:00,909 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:01,911 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:01,912 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"afc54d59-50b4-4158-9e21-65cdcff3803d","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:01,992 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"afc54d59-50b4-4158-9e21-65cdcff3803d","result":{"elements":[]}}
+[W 2026-03-09 05:33:01,993 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:02,994 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:02,996 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"98113dc0-40a0-4fb1-a08e-224b965dc56c","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:03,002 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"98113dc0-40a0-4fb1-a08e-224b965dc56c","result":{"elements":[]}}
+[W 2026-03-09 05:33:03,003 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:04,003 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:04,005 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"c863c8e9-36b3-4f95-a4be-a8f4c9cbca0a","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:04,008 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"c863c8e9-36b3-4f95-a4be-a8f4c9cbca0a","result":{"elements":[]}}
+[W 2026-03-09 05:33:04,009 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:05,010 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:05,011 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"61f63a01-aedc-4e4a-9d50-03a26b2a4909","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:05,016 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"61f63a01-aedc-4e4a-9d50-03a26b2a4909","result":{"elements":[]}}
+[W 2026-03-09 05:33:05,017 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:06,018 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:06,019 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"aaeb6dea-2f58-4ee3-9847-e76e76601227","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:06,025 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"aaeb6dea-2f58-4ee3-9847-e76e76601227","result":{"elements":[]}}
+[W 2026-03-09 05:33:06,026 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:07,027 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:07,028 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"37160b7d-6e51-4953-8402-c37f8266aca1","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:07,034 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"37160b7d-6e51-4953-8402-c37f8266aca1","result":{"elements":[]}}
+[W 2026-03-09 05:33:07,035 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:08,036 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:08,038 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"8766baf0-cfab-4b59-a4b4-357605cc4b32","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:08,045 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"8766baf0-cfab-4b59-a4b4-357605cc4b32","result":{"elements":[]}}
+[W 2026-03-09 05:33:08,045 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:09,047 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:09,049 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"b010741b-f8d1-456b-b90f-394c1c6f15dc","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:09,057 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"b010741b-f8d1-456b-b90f-394c1c6f15dc","result":{"elements":[]}}
+[W 2026-03-09 05:33:09,058 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:10,059 minium page#716 _get_elements_by_css] try to get elements: view[class='h5-view business-status']
+[D 2026-03-09 05:33:10,060 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"92a26364-e61c-42fc-a656-65610bbe9aa1","method":"Page.getElements","params":{"selector":"view[class='h5-view business-status']","pageId":83}}
+[D 2026-03-09 05:33:10,065 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"92a26364-e61c-42fc-a656-65610bbe9aa1","result":{"elements":[]}}
+[W 2026-03-09 05:33:10,066 minium page#747 _get_elements_by_css] Could not found any element 'view[class='h5-view business-status']' you need
+[I 2026-03-09 05:33:10,066 minium minitest#897 capture] capture 个人说明书当前状态已是休闲_053310.png.png
+[D 2026-03-09 05:33:10,067 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"8cada8f6-6c20-4ce5-bfb8-c1f70f79a847","method":"App.captureScreenshot","params":{}}
+[D 2026-03-09 05:33:10,162 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"8cada8f6-6c20-4ce5-bfb8-c1f70f79a847","error":{"message":"fail to capture screenshot"}}
+[E 2026-03-09 05:33:10,163 minium.Conn2208 connection#668 __on_message] [8cada8f6-6c20-4ce5-bfb8-c1f70f79a847]: fail to capture screenshot
+[E 2026-03-09 05:33:10,163 minium.App6912 app#679 screen_shot] fail to capture screenshot
+[W 2026-03-09 05:33:10,164 minium minitest#929 capture] D:\FreeTrust\FreeU_WX_Minium\outputs\20260309050002\test_myhome_friendship_status_change\20260309053143565052\images\个人说明书当前状态已是休闲_053310.png.png not exists
+[I 2026-03-09 05:33:10,165 minium minitest#897 capture] capture 个人说明书切换休闲状态_053310.png.png
+[D 2026-03-09 05:33:10,165 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"e306c4e5-4a7e-4f40-869c-24b4028e5bed","method":"App.captureScreenshot","params":{}}
+[D 2026-03-09 05:33:10,248 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"e306c4e5-4a7e-4f40-869c-24b4028e5bed","error":{"message":"fail to capture screenshot"}}
+[E 2026-03-09 05:33:10,248 minium.Conn2208 connection#668 __on_message] [e306c4e5-4a7e-4f40-869c-24b4028e5bed]: fail to capture screenshot
+[E 2026-03-09 05:33:10,249 minium.App6912 app#679 screen_shot] fail to capture screenshot
+[W 2026-03-09 05:33:10,250 minium minitest#929 capture] D:\FreeTrust\FreeU_WX_Minium\outputs\20260309050002\test_myhome_friendship_status_change\20260309053143565052\images\个人说明书切换休闲状态_053310.png.png not exists
+[I 2026-03-09 05:33:12,251 minium minitest#796 _callTestMethod] end test method
+[D 2026-03-09 05:33:12,251 minium minitest#799 _miniTearDown] =========Current case Down: test_myhome_friendship_status_change=========
+[I 2026-03-09 05:33:12,252 minium minitest#897 capture] capture teardown.png
+[D 2026-03-09 05:33:12,252 minium.Conn2208 connection#427 _safely_send] SEND > [3132149572208]{"id":"ddf1e8fa-af32-4e13-b70c-e78e6a39cea6","method":"App.captureScreenshot","params":{}}
+[D 2026-03-09 05:33:12,333 minium.Conn2208 connection#660 __on_message] RECV < [3132149572208]{"id":"ddf1e8fa-af32-4e13-b70c-e78e6a39cea6","error":{"message":"fail to capture screenshot"}}
+[E 2026-03-09 05:33:12,334 minium.Conn2208 connection#668 __on_message] [ddf1e8fa-af32-4e13-b70c-e78e6a39cea6]: fail to capture screenshot
+[E 2026-03-09 05:33:12,334 minium.App6912 app#679 screen_shot] fail to capture screenshot
+[W 2026-03-09 05:33:12,335 minium minitest#929 capture] D:\FreeTrust\FreeU_WX_Minium\outputs\20260309050002\test_myhome_friendship_status_change\20260309053143565052\images\teardown.png not exists
+[I 2026-03-09 05:33:12,335 minium basenative#59 wrapper] call BaseNative.get_start_up
+[I 2026-03-09 05:33:12,336 minium basenative#63 wrapper] call BaseNative.get_start_up end 
